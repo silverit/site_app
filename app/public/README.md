@@ -24,7 +24,9 @@ module.exports = {
   },
 }
 ```
+
 4. Thêm nội dung như sau vào file package.json: 
+
 ```
 ...
 "scripts": {
@@ -34,3 +36,7 @@ module.exports = {
 },
 ...
 ```
+
+5. Chạy:
+
+`npm run build`
