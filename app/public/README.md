@@ -38,6 +38,7 @@ module.exports = {
 ```
 Tham khảo thêm webpack.
 https://webpack.github.io/docs/
+
 5. Chạy:
 
 `npm run build`
