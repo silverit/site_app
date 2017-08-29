@@ -1,1 +1,1 @@
-document.querySelector("#test").textContent = "Hello World"    
+document.querySelector("#test").textContent = "Kiểm tra Commit Code với Issues của GitHub"    
