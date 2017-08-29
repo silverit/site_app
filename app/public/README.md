@@ -31,11 +31,13 @@ module.exports = {
 ...
 "scripts": {
     "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
-    "build": "webpack --progress --colors --config ./webpack.config.js"
+    "build": "webpack --progress --colors --watch --config ./webpack.config.js"
     ...
 },
 ...
 ```
+webpack --watch: webpack sẽ tự động kiểm tra các file có trong config, khi có sự thay đổi sẽ tự động compile lại.
+
 Tham khảo thêm webpack.
 https://webpack.github.io/docs/
 
