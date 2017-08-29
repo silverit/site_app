@@ -26,8 +26,11 @@ module.exports = {
 ```
 4. Thêm nội dung như sau vào file package.json: 
 ```
+...
 "scripts": {
     "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
     "build": "webpack --progress --colors --config ./webpack.config.js"
+    ...
 },
+...
 ```
