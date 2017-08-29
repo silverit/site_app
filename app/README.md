@@ -1,4 +1,8 @@
-Tên trong config là app nha!
+Toàn bộ structure ban đầu dùng framework revel (`revel new app`). Cần biết revel trước.
+
+Okay giờ bắt đầu.
+
+Tên của ứng dụng trong config là app, chạy:
 
     revel run app
     
