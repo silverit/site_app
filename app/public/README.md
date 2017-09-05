@@ -47,7 +47,7 @@ https://webpack.github.io/docs/
 
 
 Tới đây thì chúng ta xem như đã tạo môi trường làm việc với webpack và node module. Tiếp theo chúng ta sẽ làm việc với redux. Let's go!
-
+===
 
 1. Cài mấy module sau đây vào: react, redux, react-redux, react-dom, react-router, react-router-redux.
 
