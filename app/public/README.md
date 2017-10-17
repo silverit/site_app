@@ -66,8 +66,12 @@ module: {
 	]
 }
 ```
-Một lưu ý nhỏ nữa trong file index.js mình có import React phía trên đầu của file này nhưng trong file bạn sẽ không tìm thấy được chổ nào mình dùng. Lý do hàm render của gói react-dom khi mà biên dịch code ra nó dùng :v hơi bựa.
+Một lưu ý nhỏ nữa nhưng package dựa trên react ví dụ như react-dom thường yêu cầu React vì vậy để giải quyết bạn add vào webpack.config nội dung sau:
 ```
-import React from 'react'
-import { render } from 'react-dom'
+plugins: [
+    new webpack.ProvidePlugin({
+         "React": "react",
+    }),
+],
 ```
+Webpack lúc này nó build nó import giúp mình. Không thì file nào báo React is not define là phải khai báo thấy mịa.
