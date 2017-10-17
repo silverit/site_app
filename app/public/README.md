@@ -66,7 +66,7 @@ module: {
 	]
 }
 ```
-Một lưu ý nhỏ nữa trong file index.js mình có import React phía trên đầu của file này nhưng trong file bạn sẽ không tìm thấy được chổ nào mình dùng. Lý do thằng hàm render của gói react-dom khi mà biên dịch code ra nó dùng :v hơi bựa.
+Một lưu ý nhỏ nữa trong file index.js mình có import React phía trên đầu của file này nhưng trong file bạn sẽ không tìm thấy được chổ nào mình dùng. Lý do hàm render của gói react-dom khi mà biên dịch code ra nó dùng :v hơi bựa.
 ```
 import React from 'react'
 import { render } from 'react-dom'
