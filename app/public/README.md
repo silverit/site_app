@@ -54,17 +54,20 @@ Tới đây thì chúng ta xem như đã tạo môi trường làm việc với 
 Thêm đoạn source này vào trong thằng webpack.config 
 ```
 module: {
-		loaders: [
-			{
-				test: /\.jsx?$/,
-				exclude: /node_modules/,
-				loader: 'babel-loader',
-
+	loaders: [
+		{
+			test: /\.jsx?$/,
+			exclude: /node_modules/,
+			loader: 'babel-loader',
 		        query: {
 		           presets: ["es2015", "react"]
 		        }
 	    	}
-		]
-	}
+	]
+}
 ```
-
+Một lưu ý nhỏ nữa trong file index.js mình có import React phía trên đầu của file này nhưng trong file bạn sẽ không tìm thấy được chổ nào mình dùng. Lý do thằng hàm render của gói react-dom khi mà biên dịch code ra nó dùng :v hơi bựa.
+```
+import React from 'react'
+import { render } from 'react-dom'
+```
