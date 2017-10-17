@@ -75,3 +75,5 @@ plugins: [
 ],
 ```
 Webpack lúc này nó build nó import giúp mình. Không thì file nào báo React is not define là phải khai báo thấy mịa.
+
+Nói sơ về redux, nó dùng một cây trạng thái duy nhất cho toàn bộ ứng dụng để truy suất dữ liệu thay đổi trạng thái của toàn bộ component. Lý thuyết là thế giờ nó làm như nào để đạt được điều đó? Provider chính là thằng thằng gôm hết component vô store cũng được truyền vào Provider. Mình sử dụng react router để gôm component vô hết một chổ nhé.
