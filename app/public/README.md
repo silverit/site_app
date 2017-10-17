@@ -51,4 +51,20 @@ Tới đây thì chúng ta xem như đã tạo môi trường làm việc với 
 1. Cài mấy module sau đây vào: react, redux, react-redux, react-dom, react-router, react-router-redux.
 2. Cài thêm mấy cái module của babel để import và export như es6: babel, babel-core, babel-loader,... search thêm cái này nhé!
 
+Thêm đoạn source này vào trong thằng webpack.config 
+```
+module: {
+		loaders: [
+			{
+				test: /\.jsx?$/,
+				exclude: /node_modules/,
+				loader: 'babel-loader',
+
+		        query: {
+		           presets: ["es2015", "react"]
+		        }
+	    	}
+		]
+	}
+```
 
