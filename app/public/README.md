@@ -48,7 +48,7 @@ https://webpack.github.io/docs/
 
 Tới đây thì chúng ta xem như đã tạo môi trường làm việc với webpack và node module. Tiếp theo chúng ta sẽ làm việc với redux. Let's go!
 
-1. Cài mấy module sau đây vào: react, redux, react-redux, react-dom, react-router, react-router-redux.
+1. Cài mấy module sau đây vào: react, redux, react-redux, react-dom, react-router, react-router-redux, history.
 2. Cài thêm mấy cái module của babel để import và export như es6: babel, babel-core, babel-loader,... search thêm cái này nhé!
 
 Thêm đoạn source này vào trong thằng webpack.config 
@@ -77,3 +77,5 @@ plugins: [
 Webpack lúc này nó build nó import giúp mình. Không thì file nào báo React is not define là phải khai báo thấy mịa.
 
 Nói sơ về redux, nó dùng một cây trạng thái (store) duy nhất cho toàn bộ ứng dụng, để truy suất dữ liệu thay đổi trạng thái của toàn bộ component. Lý thuyết là thế, giờ nó làm như nào để đạt được điều đó? Provider chính là thằng gôm hết component vô, store cũng được truyền vào Provider. Mình sử dụng react-router để gôm component vô hết một chổ nhé.
+
+Sau khi setup hết router, tiếp theo mình dùng logger để dễ kiểm tra và debug khi code react. Cài redux-logger `npm i --save redux-logger`
