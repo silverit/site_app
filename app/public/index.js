@@ -1,17 +1,27 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { render } from 'react-dom'
-import { Provider } from 'react-redux';
+
+import { Provider } from 'react-redux'
+import {createBrowserHistory} from "history"
 import { Router } from 'react-router'
-import { routes } from './router'
-import { store } from './store'
+import { syncHistoryWithStore } from 'react-router-redux'
+import routes from './router'
+import configureStore from './store'
+
+const browserHistory = createBrowserHistory()
+const store = configureStore()
+const history = syncHistoryWithStore(browserHistory, store)
+
 render(
-  <Provider store={store}>
-    <Router routes={routes()}/>
+  <Provider store={store} > 
+  	<Router routes={routes()} history={history}/> 
   </Provider>,
-  document.getElementById("hf-container")
+  document.getElementById("test")
 )
 
-
+// render(
+//   <div>"Hello react Dom"</div>,
+//   document.getElementById("test")
+// )
 // import React from 'react'
 // import { render } from 'react-dom'
 // import Root from './support/containers/Root'
