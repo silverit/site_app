@@ -3,8 +3,8 @@
 # ~~~~
 
 module:testrunner
-GET     /app/*path                                       App.Index
-GET     /app/                                       App.Index
+GET		/app/*path																		App.Index
+GET     /app                                     App.Index
 
 
 #GET		/app/*path																		Building.App

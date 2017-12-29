@@ -12,10 +12,10 @@ const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store)
 
 render(
-  <Provider store={store} > 
-  	<Router routes={routes()} history={history}/> 
-  </Provider>,
-  document.getElementById("test")
+	<Provider store={store}>
+		<Router routes={routes()} history={history}/>
+	</Provider>,
+	document.getElementById("container")
 )
 
 // render(
