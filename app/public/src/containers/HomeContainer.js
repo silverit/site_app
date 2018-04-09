@@ -1,12 +1,14 @@
 
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router'
 // import { withRouter } from 'react-router'
 // import { bindActionCreators } from 'redux'
 
 class HomeContainer extends Component {
     constructor(props) {
         super(props)
+        console.log("home container")
     }
     render() {
       return (
@@ -27,4 +29,4 @@ const mapStateToProps = state => ({
 //     commonActions: bindActionCreators(commonActions, dispatch)
 // })
 
-export default connect(mapStateToProps)(HomeContainer);
+export default withRouter(connect(mapStateToProps)(HomeContainer));

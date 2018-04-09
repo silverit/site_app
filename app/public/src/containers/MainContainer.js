@@ -7,11 +7,13 @@ import { withRouter } from 'react-router'
 class MainContainer extends Component {
     constructor(props) {
         super(props)
+
     }
     render() {
+        console.log("render main")
       return (
         <div>
-        	Welcome to main app
+        	<span>Welcome to main app</span>
             <div>
                 {this.props.children || "children"}
             </div>
