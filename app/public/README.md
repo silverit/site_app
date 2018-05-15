@@ -78,4 +78,7 @@ Webpack lúc này nó build nó import giúp mình. Không thì file nào báo R
 
 Nói sơ về redux, nó dùng một cây trạng thái (store) duy nhất cho toàn bộ ứng dụng, để truy suất dữ liệu thay đổi trạng thái của toàn bộ component. Lý thuyết là thế, giờ nó làm như nào để đạt được điều đó? Provider chính là thằng gôm hết component vô, store cũng được truyền vào Provider. Mình sử dụng react-router để gôm component vô hết một chổ nhé.
 
-Sau khi setup hết router, tiếp theo mình dùng logger để dễ kiểm tra và debug khi code react. Cài redux-logger `npm i --save redux-logger`
+Sau khi setup hết router, tiếp theo mình dùng logger để dễ kiểm tra và debug khi code react. Cài redux-logger `npm i --save redux-logger`.
+
+Okay sau một thời gian khá dài trở lại nhé, phần router đã xử lý xong, bản router trong react-router cũ xong còn bỏ rồi nhé. Dùng HashRouter của react-router-dom thay thế. Xem file router.js.
+
